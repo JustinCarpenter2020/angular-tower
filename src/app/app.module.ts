@@ -7,6 +7,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './pages/home/home.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { BrowseComponent } from './components/browse/browse.component';
+import { FilterButtonsComponent } from './components/filter-buttons/filter-buttons.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { BrowseComponent } from './components/browse/browse.component';
     NavbarComponent,
     HomeComponent,
     SidenavComponent,
-    BrowseComponent
+    BrowseComponent,
+    FilterButtonsComponent
   ],
   imports: [
     BrowserModule,

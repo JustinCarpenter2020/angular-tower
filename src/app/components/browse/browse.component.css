@@ -3,6 +3,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 50vh;
+  border-radius: 8px;
 }
 
 .card-text{
