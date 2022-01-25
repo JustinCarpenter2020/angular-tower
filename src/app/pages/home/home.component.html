@@ -1,3 +1,10 @@
 <app-browse></app-browse>
-<app-filter-buttons></app-filter-buttons>
-<app-tower-event *ngFor="let e of towerEvents" [towerEvent]="e"></app-tower-event>
+<div class="row">
+  <app-filter-buttons></app-filter-buttons>
+</div>
+<div class="row">
+  <div class="col-md-4" *ngFor="let e of towerEvents">
+    <app-tower-event [towerEvent]="e"></app-tower-event>
+
+  </div>
+</div>
