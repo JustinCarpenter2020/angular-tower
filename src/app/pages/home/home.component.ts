@@ -7,11 +7,11 @@ import { TowerEventService } from '../../services/tower-event.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  events:TowerEvent[] = []
+  towerEvents:TowerEvent[] = []
   constructor(private towerEventService:TowerEventService) { }
 
   ngOnInit(): void {
-    this.towerEventService.getEvents()
+    this.towerEventService.getEvents().subscribe((events) => this.towerEvents = events)
   }
 
 }

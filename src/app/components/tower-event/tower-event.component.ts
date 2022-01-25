@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { TowerEvent } from '../../TowerEvent';
+import { Input } from '@angular/core';
 
 @Component({
   selector: 'app-tower-event',
@@ -6,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tower-event.component.css']
 })
 export class TowerEventComponent implements OnInit {
+
+  @Input() towerEvent: TowerEvent = { id: '', name: '', imgUrl: '', type: '', status: '', description: '', location: '', tickets: 0, price: 0, startDate: '', endDate: '', comments: []};
 
   constructor() { }
 
