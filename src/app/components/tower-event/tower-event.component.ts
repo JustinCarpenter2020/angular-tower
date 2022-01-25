@@ -10,7 +10,6 @@ import { Input } from '@angular/core';
 export class TowerEventComponent implements OnInit {
 
   @Input() towerEvent: TowerEvent = { id: '', name: '', imgUrl: '', type: '', status: '', description: '', location: '', tickets: 0, price: 0, startDate: '', endDate: '', comments: []};
-
   constructor() { }
 
   ngOnInit(): void {

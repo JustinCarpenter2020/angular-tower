@@ -11,6 +11,12 @@ export class TowerEventService {
 
   constructor(private http:HttpClient) { }
 
+
+  getEventById(id: string): Observable<TowerEvent> {
+    const url = `${this.apiUrl}/${id}`
+    return this.http.get<TowerEvent>(url)
+  }
+
   getEvents(): Observable<TowerEvent[]> {
     const res = this.http.get<TowerEvent[]>(this.apiUrl)
     console.log(res)
