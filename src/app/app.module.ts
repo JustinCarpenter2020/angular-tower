@@ -12,6 +12,7 @@ import { FilterButtonsComponent } from './components/filter-buttons/filter-butto
 import { TowerEventComponent } from './components/tower-event/tower-event.component';
 import { EventDetailsComponent } from './pages/event-details/event-details.component';
 import { AccountComponent } from './pages/account/account.component';
+import { EventHeaderComponent } from './components/event-header/event-header.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { AccountComponent } from './pages/account/account.component';
     FilterButtonsComponent,
     TowerEventComponent,
     EventDetailsComponent,
-    AccountComponent
+    AccountComponent,
+    EventHeaderComponent
   ],
   imports: [
     BrowserModule,
