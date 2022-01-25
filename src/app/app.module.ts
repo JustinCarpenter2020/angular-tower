@@ -10,6 +10,8 @@ import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { BrowseComponent } from './components/browse/browse.component';
 import { FilterButtonsComponent } from './components/filter-buttons/filter-buttons.component';
 import { TowerEventComponent } from './components/tower-event/tower-event.component';
+import { EventDetailsComponent } from './pages/event-details/event-details.component';
+import { AccountComponent } from './pages/account/account.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { TowerEventComponent } from './components/tower-event/tower-event.compon
     SidenavComponent,
     BrowseComponent,
     FilterButtonsComponent,
-    TowerEventComponent
+    TowerEventComponent,
+    EventDetailsComponent,
+    AccountComponent
   ],
   imports: [
     BrowserModule,
