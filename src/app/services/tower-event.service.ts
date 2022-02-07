@@ -1,12 +1,22 @@
 import { Injectable } from '@angular/core';
-import {HttpClient} from '@angular/common/http'
+import {HttpClient, HttpHeaders} from '@angular/common/http'
 import { TowerEvent } from '../TowerEvent';
 import { Observable } from 'rxjs';
+
+const httpOptions = {
+  headers: new HttpHeaders({
+    'Content-Type': 'application/json'
+  })
+}
+
 @Injectable({
   providedIn: 'root'
 })
+
+
 export class TowerEventService {
   private apiUrl = 'http://localhost:3000/api/events'
+
 
 
   constructor(private http:HttpClient) { }
@@ -18,7 +28,7 @@ export class TowerEventService {
   }
 
   getEvents(): Observable<TowerEvent[]> {
-    const res = this.http.get<TowerEvent[]>(this.apiUrl)
+    const res = this.http.get<TowerEvent[]>(this.apiUrl, httpOptions)
     console.log(res)
     return res
   }

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalComponent } from '../modal/modal.component';
+import {MatDialog} from '@angular/material/dialog'
 
 @Component({
   selector: 'app-sidenav',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidenavComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
+
+  openDialog(){
+    this.dialog.open(ModalComponent);
+  }
 
   ngOnInit(): void {
   }
 
 }
+
